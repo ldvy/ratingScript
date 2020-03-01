@@ -1,0 +1,7 @@
+task startScript() {
+  doLast {
+    exec {
+     executable "./rating.sh", "dataSrc"
+    }
+  }
+}
