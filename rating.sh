@@ -1,4 +1,7 @@
-dataSrc=$1
+#!bin/bash
+
+dataSrc=dataSrc.txt
+
 while read line
 do
 	ip=$(echo $line | cut -d ":" -f 1)

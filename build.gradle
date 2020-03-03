@@ -1,7 +1,17 @@
-task startScript() {
-  doLast {
-    exec {
-     executable "./rating.sh", "dataSrc"
+executable "./rating.sh"
+    
+task start() {
+    println("Executing the script")
+
+    doLast {
+        exec {
+            executable "./rating.sh"
+        }
     }
-  }
 }
+
+
+
+
+
+
